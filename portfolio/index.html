@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            background: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            margin: 15px -71px;
+            
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            background-color: rgba(8, 9, 9, 0.162);
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: rgba(243, 247, 247, 0.71);
+            border-radius: 15px;
+        }
+
+        nav ul li a:hover {
+            color: aqua;
+            font-size: 1.04rem;
+            box-shadow:0px 5px 7px;
+
+        }
+
+
+        main hr {
+            border: 0;
+            background: aqua;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+            margin: 10px -101px;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+        .h{
+            
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 56px 0;
+        }
+
+        .leftsection div {
+            width: 87%;
+        }
+
+        .leftsection {
+            font-size: 4rem;
+
+            margin: 30px 0;
+        }
+
+        .rightsection img {
+            width: 118%;
+            margin: 50px 0;
+
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .blue {
+            color: aqua;
+        }
+
+        #element {
+            color: aqua;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection p {
+            margin: 2%;
+            font-family: 'Poppins','sans-serif';
+            font-size: 24px;
+        }
+        .A{
+            color: aqua;
+        }
+        
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><h3><span class="A">A</span>nand's Portfolio</h3></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html" class="h">Home</a></li>
+                    <li><a href="about.html" class="h">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi! My Name is <span class="blue">Anand Bhardwaj</span>
+                <div>& I am a </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="https://enterprix.us/wp-content/uploads/2020/04/web-design-element1-51-1536x1289.png" alt="\">
+            </div>
+
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>Profile</h1>
+            <p>I am a dynamic and results-driven individual with a passion for continuous learning and personal growth.
+                My diverse skill set includes problem solving,HTML,CSS,C++,teamwork,communication skills. With a
+                commitment to excellence and a drive to achieve goals, I am eager to contribute my talents and make a
+                positive impact in any endeavor I undertake.
+            </p>
+            
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['B.Tech Student', 'Junior Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
